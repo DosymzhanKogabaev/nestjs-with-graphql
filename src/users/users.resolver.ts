@@ -8,8 +8,8 @@ import {
   ResolveField,
   Resolver,
 } from '@nestjs/graphql';
-import { CreateUserInput } from 'src/dtos/create-user.input';
-import { ProductsService } from 'src/products/products.service';
+import { CreateUserInput } from '../dtos/create-user.input';
+import { ProductsService } from '../products/products.service';
 import { User } from './user.type';
 import { UsersService } from './users.service';
 

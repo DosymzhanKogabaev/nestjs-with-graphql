@@ -4,8 +4,8 @@ import {
   Injectable,
   NotFoundException,
 } from '@nestjs/common';
-import { CreateProductInput } from 'src/dtos/create-product.input';
-import { UsersService } from 'src/users/users.service';
+import { CreateProductInput } from '../dtos/create-product.input';
+import { UsersService } from '../users/users.service';
 import { Product } from './product.type';
 
 @Injectable()
