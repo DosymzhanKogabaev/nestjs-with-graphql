@@ -1,0 +1,35 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateProductInput {
+  title: String!
+  userId: Int!
+}
+
+input CreateUserInput {
+  name: String!
+}
+
+type Mutation {
+  createProduct(input: CreateProductInput!): Product!
+  createUser(input: CreateUserInput!): User!
+}
+
+type Product {
+  id: Int!
+  title: String!
+  userId: Int!
+}
+
+type Query {
+  products: [Product!]!
+  user(id: Int!): User!
+  users: [User!]!
+}
+
+type User {
+  id: Int!
+  name: String!
+  products: [Product!]!
+}
